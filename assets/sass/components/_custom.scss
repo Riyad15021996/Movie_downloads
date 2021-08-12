@@ -1,0 +1,330 @@
+/*=========================================================
+          [ badge ]
+=========================================================*/
+
+.badge--base {
+    background-color: $bg--base;
+    color: $text--white;
+}
+
+.badge--primary {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.badge--secondary {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.badge--success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.badge--danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.badge--warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+
+.badge--info {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.badge--light {
+    color: #212529;
+    background-color: #e2e6ea;
+}
+
+.badge--dark {
+    color: #fff;
+    background-color: #23272b;
+}
+
+
+/*=========================================================
+          [ button Style ]
+=========================================================*/
+
+.btn--custom {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    @include heading-font;
+    padding: 17px 30px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    position: relative;
+    border-radius: 0px;
+    z-index: 1;
+    @include responsive(allPhone) {
+        font-size: 15px;
+    }
+    @include responsive(vxxs) {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+}
+
+.btn--base {
+    background: $bg--base;
+    border: 1px solid $bg--base;
+    color: $text--white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn--base:hover {
+    background: none;
+    border: 1px solid rgba($bg--base, 1);
+    color: $text--base;
+}
+
+.btn-outline--base {
+    background: none;
+    color: $text--base;
+    border: 1px solid $bg--base;
+    &:hover {
+        background: $bg--base;
+        color: $text--white;
+    }
+}
+
+.btn-outline--body {
+    background: none;
+    color: $text--body;
+    border: 1px solid $text--body;
+    &:hover {
+        background: none;
+        color: $text--base;
+        border-color: $bg--base;
+    }
+}
+
+.btn--white {
+    background: $bg--white;
+    color: $text--base;
+    border: 1px solid $text--white;
+    &:hover {
+        background: none;
+        color: $text--white;
+        border-color: $bg--white;
+    }
+}
+
+.btn--capsole {
+    border-radius: 30px;
+}
+
+.btn--facebook {
+    background: #4267b2;
+}
+
+.btn--google {
+    background: #da1c36;
+}
+
+.btn--twitter {
+    background: #1da1f2;
+}
+
+
+/*=========================================================
+          [ Card Style ]
+=========================================================*/
+
+.custom--card {
+    position: relative;
+    border: 1px solid #00000020;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.custom--card img {}
+
+.custom--card .card-body {}
+
+.custom--card .card-title {
+    margin: 5px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.custom--card .card-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/*=========================================================
+          [ Form ]
+=========================================================*/
+
+.custom-form {}
+
+.form--control {
+    height: 50px;
+    padding: 15px 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    border: 1px solid 1px solid rgba(119, 119, 119, 0.12);
+    border-radius: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    @include white-shadow;
+}
+
+
+/*=========================================================
+          [ Modal Style ]
+=========================================================*/
+
+.custom--modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.custom--modal .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: .5rem;
+    pointer-events: none;
+}
+
+.custom--modal .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.custom--modal .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+
+.custom--modal .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.custom--modal .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+
+/*=========================================================
+          [ Table ]
+=========================================================*/
+
+.custom--table {
+    width: 100%;
+    color: inherit;
+    vertical-align: middle;
+    font-weight: 400;
+    text-align: center;
+}
+
+.custom--table thead {
+    font-weight: 700;
+    font-size: 18px;
+    background: inherit;
+    color: inherit;
+    border-top: none;
+}
+
+.custom--table tbody {
+    border-top: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.custom--table tbody tr:nth-child(odd) {
+    background-color: inherit;
+}
+
+.custom--table tr {
+    line-height: 50px;
+}
+
+.custom--table tr th {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.custom--table tr td {
+    font-size: 14px;
+}
+
+[data-label] {
+    position: relative;
+}
+
+[data-label]::before {
+    position: absolute;
+    content: attr(data-label);
+    font-weight: 700;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 8px 20px;
+    display: none;
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    .table-responsive--sm thead {
+        display: none;
+    }
+    .table-responsive--sm [data-label]::before {
+        display: block;
+    }
+}
